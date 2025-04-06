@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>edutrip-celineie-8g</title>
+  <link rel="stylesheet" href="design.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+
+  <style>
+    .polaroid-wall {
+      text-align: center;
+      margin-top: 40px;
+    }
+  
+    .polaroid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .polaroid {
+      background: white;
+      padding: 10px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      transform: rotate(-3deg);
+      transition: transform 0.3s;
+      width: 150px;
+    }
+  
+    .polaroid:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+  
+    .polaroid img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .polaroid p {
+      margin-top: 5px;
+      font-size: 0.85rem;
+      font-family: 'Comic Sans MS', cursive;
+    }
+  </style>
+  
+  <style>
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-4px); }
+      100% { transform: translateY(0); }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffd1dc, #ffe4e1);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #d81b60;
+    }
+
+    nav select {
+  padding: 5px 8px;  /* Made it smaller */
+  border-radius: 8px;  
+  border: none;
+  background: #fff0f5;
+  color: #c2185b;
+  font-size: 14px;  /* Smaller text */
+  font-family: 'Poppins', sans-serif;  /* Matching the rest of the site */
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+
+    nav select:hover {
+      animation: bounce 0.6s ease;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .blog-post h2 {
+      color: #ec407a;
+      margin-bottom: 10px;
+    }
+
+    .blog-post p {
+      color: #c2185b;
+      line-height: 1.6;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #ec407a;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      animation: fall 5s linear infinite;
+      top: -10%;
+      transform: rotate(45deg);
+      border-radius: 50% 50% 0 0;
+      z-index: 1;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      top: 0;
+      left: -10px;
+    }
+
+    @keyframes fall {
+      0% {
+        top: -10%;
+        opacity: 1;
+      }
+      100% {
+        top: 110%;
+        opacity: 0;
+      }
+    }
+
+    
+
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+  </style>
+
+  
+</head>
+
+
+<body>
+  <header>
+    <h1>꩜ Taiwan Edutrip Blog .ᐟ </h1>
+    <nav>
+      <select onchange="handleMenu(this.value)">
+        <option disabled>Menu</option>
+        <option value="home.html" selected>Home</option>
+        <option value="agama.html">Agama</option>
+        <option value="pkn.html">PKN</option>
+        <option value="indonesia.html">Bahasa Indonesia</option>
+        <option value="inggris.html">Bahasa Inggris</option>
+        <option value="ips.html">IPS</option>
+        <option value="mandarin.html">Bahasa Mandarin</option>
+        <option value="gallery.html">Gallery</option>
+        <option value="profile.html">Profile</option>
+        <option value="index.html">Logout</option>
+      </select>
+    </nav>
+  </header>
+
+  <div class="container" id="main-content">
+    <div class="blog-post">
+      <h2>Celine's Edutrip to Taiwan 2025! ˆ𐃷ˆ </h2>
+      <p style="font-family: 'Caveat', cursive; font-size: 20px;">
+        .☘︎ ݁˖ From March 8 to 15, 2025, I went on an unforgettable Edutrip to Taiwan. I got to explore several amazing cities like Taoyuan, Taipei, Keelung, and my personal favorite, Hualien. Each place gave me a new scenery to admire, but I especially favor the lush, green forests that surrounds Hualien.
+      </p>
+      <p style="font-family: 'Caveat', cursive; font-size: 20px;">
+        ᯓ★ The trip wasn’t just about sightseeing though—it also had informative lessons. I learned a ton about Taiwan’s history, tried new recycling methods, and visited some amazing buildings that mix traditional and modern styles perfectly. There were night markets, museum visits, local interactions, and many more.
+      </p>
+      <p style="font-family: 'Caveat', cursive; font-size: 20px;">
+        ۶ৎ This website is basically my way of sharing everything I saw, learned, and experienced during the trip. Each section in the navigation bar shows the tasks I did in many subjects, from interviewing the locals to reviewing places I walked in. Click around and come along to revisit the memories I made in Taiwan! ˙ᵕ˙
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 3 + Math.random() * 2 + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 200);
+
+  function handleMenu(value) {
+    if (value === 'logout') {
+      alert('Logged out! See you soon ˎˊ˗');
+      window.location.href = 'index.html';
+    } else {
+      window.location.href = value;
+    }
+  }
+
+  
+  </script>
+  <script src="mario.js"></script>
+  <script src="hearts.js"></script>
+
+</body>
+</html>
+
+

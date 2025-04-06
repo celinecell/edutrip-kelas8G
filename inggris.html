@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English - Taiwan Edutrip</title>
+  <link rel="stylesheet" href="design.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffd1dc, #ffe4e1);
+      overflow-x: hidden;
+      color: #c2185b;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #d81b60;
+    }
+
+    nav select {
+      padding: 5px 8px;
+      border-radius: 8px;
+      border: none;
+      background: #fff0f5;
+      color: #c2185b;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.4);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow-y: auto;
+    }
+
+    .article-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  color: #ec407a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+    .author {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #b71c4a;
+    }
+
+    
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .text-section {
+      flex: 2;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .text-section h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .image-section {
+      flex: 1;
+    }
+
+    .image-section img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .text-section p {
+  font-family: 'Caveat', cursive; 
+  font-size: 22px; 
+  line-height: 1.8;
+  color: #c2185b;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>꩜ Taiwan Edutrip Blog .ᐟ </h1>
+    <nav>
+      <select onchange="handleMenu(this.value)">
+        <option disabled>Menu</option>
+        <option value="home.html">Home</option>
+        <option value="agama.html">Agama</option>
+        <option value="pkn.html">PKN</option>
+        <option value="indonesia.html">Bahasa Indonesia</option>
+        <option value="inggris.html" selected>Bahasa Inggris</option>
+        <option value="ips.html">IPS</option>
+        <option value="mandarin.html">Bahasa Mandarin</option>
+        <option value="gallery.html">Gallery</option>
+        <option value="profile.html">Profile</option>
+        <option value="index.html">Logout</option>
+      </select>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 class="article-title">🔖 English Travel Mind Map</h2>
+    <p class="author">by Celine | 8G</p>
+
+    <div class="content">
+      <div class="text-section">
+      <div class="image-section">
+        <img src="mindmap.png" alt="English Travel Mind Map">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function handleMenu(value) {
+      if (value === 'logout') {
+        alert('Logged out! See you soon ˎˊ˗');
+        window.location.href = 'index.html';
+      } else {
+        window.location.href = value;
+      }
+    }
+  </script>
+  <script src="mario.js"></script>
+  <script src="hearts.js"></script>
+
+</body>
+</html>

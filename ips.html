@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPS - Taiwan Edutrip</title>
+  <link rel="stylesheet" href="design.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffd1dc, #ffe4e1);
+      overflow-x: hidden;
+      color: #c2185b;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #d81b60;
+    }
+
+    nav select {
+      padding: 5px 8px;
+      border-radius: 8px;
+      border: none;
+      background: #fff0f5;
+      color: #c2185b;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.4);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow-y: auto;
+    }
+
+    .article-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  color: #ec407a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+    .author {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #b71c4a;
+    }
+
+    
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .text-section {
+      flex: 2;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .text-section h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .image-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .image-section img {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+    .image-section img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .text-section p {
+  font-family: 'Caveat', cursive; 
+  font-size: 18px; 
+  line-height: 1.8;
+  color: #c2185b;
+}
+
+.image-section img:hover {
+  transform: scale(1.03);
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.image-row img {
+  width: 300px;          
+  height: 200px;          
+  object-fit: cover;      
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.content.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.content.reverse .text-section h3 {
+  text-align: right;
+}
+
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <h1>꩜ Taiwan Edutrip Blog .ᐟ </h1>
+    <nav>
+      <select onchange="handleMenu(this.value)">
+        <option disabled>Menu</option>
+        <option value="home.html">Home</option>
+        <option value="agama.html">Agama</option>
+        <option value="pkn.html">PKN</option>
+        <option value="indonesia.html">Bahasa Indonesia</option>
+        <option value="inggris.html">Bahasa Inggris</option>
+        <option value="ips.html" selected>IPS</option>
+        <option value="mandarin.html">Bahasa Mandarin</option>
+        <option value="gallery.html">Gallery</option>
+        <option value="profile.html">Profile</option>
+        <option value="index.html">Logout</option>
+      </select>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 class="article-title">🪷 IPS Interviews & Assignments</h2>
+    <p class="author">by Celine | 8G</p>
+
+    <div class="content">
+      <div class="text-section">
+        <h3>Artefacts</h3>
+        <p>
+          肉形石 ròuxíngshí 'Flesh Shaped Stone' - There is a rock shaped like a pork chop. It was made by ancient people because their king could eat pork but his poor people could only eat rice and lard while staring at the stone. One day, the people got fed up and gave the king the stone. Apparently, when the king bit into the stone, it was very hard because it wasn't a piece of pork. The people wanted to make the king aware that he was greedy because he ate pork when his people were starving. This shows that during old times, the kings were selfish & selfish and looked down upon his people, which is something a king isn't supposed to do.
+        </p>
+        <p>
+          Now, there are also hair pins that are still used by many women and men. Early society, especially women, usually used hair accessories, namely hair pins, as formal clothing. Usually, in the past, accessories were made of stone. Today, many women continue to wear hair pins, especially when wearing formal traditional clothing.
+        </p>
+      </div>
+      <div class="image-section">
+        <img src="rock1.jpg" alt="Flesh Shaped Stone">
+        <img src="pins1.jpg" alt="Hair Pins">
+      </div>
+    </div>
+
+    <div class="content reverse">
+      <div class="text-section">
+        <h3>Chisingtan Beach's Locals</h3>
+        <p>
+          七星潭海邊 Qīxīngtán Hǎibiān 'Qixingtan / Chihsingtan Beach' - The local residens around the area sell jewerly that are made from stones. They're usually handmade, a common piece of jewerly consisting of just a thick string with a piece of polished stone hanging. Some other locals also sell large and small pieces of crystals. They usually sit near the entrance of the beach, but far away from the shore so they get a better chance at meeting visitors. The sellers are also elderly people who're selling these jewerly and crystals as a form of main income. There's a seller on the left of the 2nd picture I added. The stones were very pretty, but sadly I didn't have enough time to buy some.
+        </p>
+      </div>
+      <div class="image-section">
+        <img src="rocks.jpg" alt="Rocks at the Beach">
+        <img src="shore.jpg" alt="Beach Entrance">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="text-section">
+        <h3>Keelung Night Market's Pictures</h3>
+      </div>
+      <div class="image-row">
+        <img src="grouppic.jpg" alt="Kayla, Nelly & Me at Keelung Night Market">
+        <img src="nightmarket.jpg" alt="The Crowded Atmosphere at the Market">
+      </div>
+    </div>
+
+    <div class="content reverse">
+      <div class="text-section">
+        <h3>Interviews with the Locals</h3>
+        <p>
+          Me, Gloria, and Alicia interviewed the receptionists at the front desk of our Taipei hotel during our last days in Taiwan. They said that one common tradition across various destinations in Taiwan is the strong discipline in throwing garbage in its proper place and avoiding irresponsible parking.
+          The condition of most buildings in Taiwan are now more modern, but many old, tall buildings still scatter around. Taiwanese society shows its appreciation for the past by respecting traditional culture and preserving the environment like in Jiufen Street, where historical buildings and staircases remain intact, and in Shifen Street, known for its cleanliness and order. 
+          The main city destinations in Taiwan include Taipei, Taoyuan, Hualien, and Taichung. New Taipei City is the most modern city among them all, especially with the tourist attraction of Taipei 101. But, other cities are steadily developing too. Intergenerational interactions can be seen through strong respect for the elderly, with older people often being prioritized over the younger ones in public and family settings.
+          Taiwanese people enjoy freedom of belief and expression. Many people follow traditional Chinese religions, specifically Confucianism and Buddhism, which play an important role in their daily lives and cultural practices. There are still various religions in Taiwan that are still believed in.
+        </p>
+      </div>
+      <div class="image-section">
+        <img src="interview.jpg" alt="The Receptionists We Interviewed">
+        <img src="buddha.jpg" alt="Buddha Statue at National Palace Museum">
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script>
+    function handleMenu(value) {
+      if (value === 'logout') {
+        alert('Logged out! See you soon ˎˊ˗');
+        window.location.href = 'index.html';
+      } else {
+        window.location.href = value;
+      }
+    }
+  </script>
+  <script src="mario.js"></script>
+  <script src="hearts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile - Taiwan Edutrip</title>
+  <link rel="stylesheet" href="design.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Caveat&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffd1dc, #ffe4e1);
+      color: #c2185b;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #d81b60;
+    }
+
+    nav select {
+      padding: 5px 8px;
+      border-radius: 8px;
+      border: none;
+      background: #fff0f5;
+      color: #c2185b;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.4);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: #e91e63;
+      margin-bottom: 20px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f8bbd0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .container p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: #c2185b;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <h1>꩜ Taiwan Edutrip Blog .ᐟ</h1>
+    <nav>
+      <select onchange="handleMenu(this.value)">
+        <option disabled>Menu</option>
+        <option value="home.html">Home</option>
+        <option value="agama.html">Agama</option>
+        <option value="pkn.html">PKN</option>
+        <option value="indonesia.html">Bahasa Indonesia</option>
+        <option value="inggris.html">Bahasa Inggris</option>
+        <option value="ips.html">IPS</option>
+        <option value="mandarin.html">Bahasa Mandarin</option>
+        <option value="gallery.html">Gallery</option>
+        <option value="profile.html" selected>Profile</option>
+        <option value="index.html">Logout</option>
+      </select>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>𐙚 My Profile</h2>
+    <img src="image.jpg" alt="Profile Picture" class="profile-img">
+    <p>Name: Celine Ie</p>
+    <p>Class/No: 8G/02</p>
+    <p>Destination: Hualien, Taiwan</p>
+  </div>
+
+  <script>
+    function handleMenu(value) {
+      if (value === 'logout') {
+        alert('Logged out! See you soon ˎˊ˗');
+        window.location.href = 'index.html';
+      } else {
+        window.location.href = value;
+      }
+    }
+  </script>
+  <script src="mario.js"></script>
+  <script src="hearts.js"></script>
+
+</body>
+</html>
